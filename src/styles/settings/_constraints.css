@@ -1,0 +1,4 @@
+:root {
+  --width-constraint: 120rem;
+  --horizontal-inset: var(--spacing-base);
+}

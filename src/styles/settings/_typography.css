@@ -1,0 +1,23 @@
+:root {
+  --font-family-display: 'Vollkorn', serif;
+  --font-family-regular: 'Assistant', sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --line-height-base: 1.4;
+
+  --font-size-regular: 1.8rem;
+  --font-size-sm: calc(var(--font-size-regular) - 0.2rem);
+  --font-size-xs: calc(var(--font-size-sm) - 0.4rem);
+  --font-size-md: calc(var(--font-size-regular) + 0.2rem);
+  --font-size-lg: calc(var(--font-size-md) + 0.4rem);
+  --font-size-xl: calc(var(--font-size-lg) + 0.8rem);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size-regular: 2.2rem;
+  }
+}

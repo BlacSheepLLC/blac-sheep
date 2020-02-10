@@ -1,0 +1,7 @@
+:root {
+  --black: #000;
+  --grey: #ededed;
+
+  --color-text: var(--black);
+  --color-text-inverted: #000000;
+}

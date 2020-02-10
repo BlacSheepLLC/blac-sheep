@@ -1,0 +1,20 @@
+.o-interactive-link {
+  position: relative;
+}
+
+.o-interactive-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1.6px;
+  left: 0;
+  width: 0;
+  height: 0.36rem;
+  background-color: var(--black);
+  transition: width 0.3s;
+}
+
+.o-interactive-link:hover::before,
+.o-interactive-link:focus::before {
+  width: 100%;
+}

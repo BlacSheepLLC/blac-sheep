@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--spacing-md) var(--horizontal-inset);
+}
+
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+}
+
+.links a {
+  margin-left: var(--spacing-base);
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: var(--constrained-horizontal-inset);
+    padding-right: var(--constrained-horizontal-inset);
+  }
+}

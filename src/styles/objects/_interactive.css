@@ -1,8 +1,10 @@
-.o-interactive-link {
+.o-interactive-link,
+.o-interactive-cta {
   position: relative;
 }
 
-.o-interactive-link::before {
+.o-interactive-link::before,
+.o-interactive-cta::before {
   content: '';
   display: block;
   position: absolute;
@@ -14,7 +16,13 @@
   transition: width 0.3s;
 }
 
+.o-interactive-cta::before {
+  width: 40%;
+}
+
 .o-interactive-link:hover::before,
-.o-interactive-link:focus::before {
+.o-interactive-link:focus::before,
+.o-interactive-cta:hover::before,
+.o-interactive-cta:focus::before {
   width: 100%;
 }

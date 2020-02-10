@@ -3,5 +3,6 @@
   --grey: #ededed;
 
   --color-text: var(--black);
+  --color-text-subtle: #757575;
   --color-text-inverted: #000000;
 }

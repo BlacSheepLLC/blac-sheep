@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  padding: var(--spacing-md) var(--horizontal-inset);
+}
+
+.o-hero-header {
+  padding-top: 30vh;
+}
+
+.o-hero-header .o-hero-title {
+  font-family: var(--font-family-regular);
+  font-weight: var(--font-weigt-bold);
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  letter-spacing: 0.026rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.o-hero-header .o-hero-lead {
+  font-size: var(--font-size-md);
+  letter-spacing: 0.028rem;
+  color: var(--color-text-subtle);
+  margin-bottom: var(--spacing-lg);
+}
+
+.o-hero-header .o-hero-cta {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: 768px) {
+  .o-hero-header {
+    padding-top: 20vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: var(--constrained-horizontal-inset);
+    padding-right: var(--constrained-horizontal-inset);
+  }
+}

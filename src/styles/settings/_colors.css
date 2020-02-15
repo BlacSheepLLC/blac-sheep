@@ -4,5 +4,6 @@
 
   --color-text: var(--black);
   --color-text-subtle: #757575;
-  --color-text-inverted: #000000;
+  --color-text-inverted: #ffffff;
+  --color-text-subtle-inverted: #8e8e8e;
 }

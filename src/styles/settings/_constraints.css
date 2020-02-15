@@ -1,7 +1,5 @@
 :root {
   --width-constraint: 128rem;
-  --horizontal-inset: calc(env(safe-area-inset-left) + var(--spacing-base));
-  --constrained-horizontal-inset: calc(
-    (100vw - var(--width-constraint)) / 2 + var(--spacing-base)
-  );
+  --horizontal-inset: calc(env(safe-area-inset-left) + var(--spacing-sm));
+  --constrained-horizontal-inset: calc((100vw - var(--width-constraint)) / 2 + var(--spacing-sm));
 }

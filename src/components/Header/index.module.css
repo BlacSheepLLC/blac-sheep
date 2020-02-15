@@ -18,7 +18,7 @@
 }
 
 .links a {
-  margin-left: var(--spacing-base);
+  margin-left: var(--spacing-sm);
 }
 
 @media (min-width: 1280px) {

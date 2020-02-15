@@ -1,42 +1,105 @@
+.home {
+  display: grid;
+  grid-template-areas:
+    'hero'
+    'services';
+}
+
 .container {
   width: 100%;
-  padding: var(--spacing-md) var(--horizontal-inset);
+  padding: var(--spacing-lg) var(--horizontal-inset);
 }
 
-.o-hero-header {
+.subtitle {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+}
+
+.title {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-base);
+}
+
+.hero-header {
+  grid-area: hero;
   padding-top: 30vh;
+  padding-bottom: 12rem;
 }
 
-.o-hero-header .o-hero-title {
-  font-family: var(--font-family-regular);
+.hero-header .hero-title {
   font-weight: var(--font-weigt-bold);
   font-size: var(--font-size-xl);
   line-height: 1.6;
   letter-spacing: 0.026rem;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
-.o-hero-header .o-hero-lead {
+.hero-header .hero-lead {
   font-size: var(--font-size-md);
   letter-spacing: 0.028rem;
   color: var(--color-text-subtle);
   margin-bottom: var(--spacing-lg);
 }
 
-.o-hero-header .o-hero-cta {
+.hero-header .hero-cta {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-bold);
 }
 
+.services-section {
+  grid-area: services;
+  color: var(--color-text-inverted);
+  background-color: var(--black);
+}
+
+.service-list {
+  margin-top: var(--spacing-lg);
+}
+
+.service-list dt {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  margin-top: var(--spacing-md);
+}
+
+.service-list dd:nth-of-type(even) {
+  color: var(--color-text-subtle-inverted);
+  margin-top: var(--spacing-xs);
+}
+
 @media (min-width: 768px) {
-  .o-hero-header {
+  .home {
+    grid-template-columns: 80vw 1fr;
+    grid-template-areas:
+      'hero hero'
+      'services .';
+  }
+
+  .hero-header {
     padding-top: 20vh;
   }
 }
 
+@media (min-width: 1024px) {
+  .home {
+    grid-template-columns: 60vw 1fr;
+    grid-template-areas:
+      'hero hero'
+      'services .';
+  }
+}
+
 @media (min-width: 1280px) {
-  .container {
+  .hero-header {
     padding-left: var(--constrained-horizontal-inset);
     padding-right: var(--constrained-horizontal-inset);
+  }
+
+  .services-section {
+    padding-left: var(--constrained-horizontal-inset);
   }
 }

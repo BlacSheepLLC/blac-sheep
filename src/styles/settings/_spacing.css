@@ -1,15 +1,13 @@
 :root {
-  --spacing-sm: 0.8rem;
-  --spacing-base: 1.6rem;
-  --spacing-md: 2.4rem;
-  --spacing-lg: 4rem;
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1.6rem;
+  --spacing-base: 3.2rem;
+  --spacing-md: 4rem;
+  --spacing-lg: 5.6rem;
 }
 
 @media (min-width: 768px) {
   :root {
-    --spacing-sm: 2.4;
-    --spacing-base: 3.2rem;
-    --spacing-md: 4rem;
-    --spacing-lg: 5.6rem;
+    --spacing-sm: 3.2rem;
   }
 }

@@ -95,6 +95,47 @@ const IndexPage = () => (
           </li>
         </ul>
       </section>
+
+      <section className={`${styles.container} ${styles.motivationSection}`}>
+        <div className={styles.motivationSectionHeader}>
+          <span className={styles.subtitle}>It&apos;s a win-win</span>
+          <h2 className={styles.title}>
+            Working on pijamas, from a coffeeshop and our pets all over our keyboards it&apos;s a lifestyle, but remote
+            means so much more for us
+          </h2>
+        </div>
+
+        <div className={styles.motivationSectionContent}>
+          <p>
+            We founded
+            <span className="o-brand-wordmark"> Blac—Sheep </span>
+            to work on challenging and awesome projects. Because we love the startup energy of building something new,
+            something revolutionary.
+          </p>
+
+          <br />
+
+          <p>
+            Being
+            <em> proudly </em>
+            Mexican-American founded we saw an opportunity we couldn&apos;t ignore, we had the chance to bring the
+            <b> best of our countries together </b>
+            through hard work and collaboration. We wanted
+            <strong> diversity and inclusion </strong>
+            right at the core of our values. We wanted to open the doors to the talented developers that don&apos;t have
+            the means or the privilege to develop their careers abroad and at their full potential.
+          </p>
+
+          <br />
+
+          <p>
+            Working remotely has allowed us to onboard
+            <strong> amazing talented developers </strong>
+            no matter where they are and place them right into the development battlefield with exciting and
+            cutting-edge startups. We are all eager to show what we can do together.
+          </p>
+        </div>
+      </section>
     </div>
   </Layout>
 );

@@ -4,7 +4,8 @@
     'hero'
     'services'
     'process'
-    'partners';
+    'partners'
+    'motivation';
 }
 
 .container {
@@ -82,6 +83,7 @@
 .partners-section {
   grid-area: partners;
   text-align: center;
+  padding-bottom: var(--spacing-base);
 }
 
 .partners-logos {
@@ -111,6 +113,18 @@
   margin-right: var(--spacing-base);
 }
 
+.motivation-section {
+  grid-area: motivation;
+}
+
+.motivation-section .o-brand-wordmark {
+  font-size: var(--font-size-base);
+}
+
+.motivation-section-header {
+  margin-bottom: var(--spacing-lg);
+}
+
 @media (min-width: 768px) {
   .home {
     grid-template-columns: repeat(5, 20vw);
@@ -118,7 +132,8 @@
       'hero hero hero hero hero'
       'services services services services .'
       '. process process process process'
-      'partners partners partners partners partners';
+      'partners partners partners partners partners'
+      'motivation motivation motivation motivation motivation';
   }
 
   .hero-header {
@@ -138,6 +153,7 @@
   }
 
   .partners-section {
+    padding-bottom: var(--spacing-xl);
     margin-top: var(--spacing-lg);
   }
 
@@ -150,6 +166,21 @@
   .partners-logos li {
     width: calc(100% / 3);
   }
+
+  .motivation-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+
+  .motivation-section-content {
+    align-self: flex-end;
+    width: 70%;
+  }
+
+  .motivation-section-header {
+    width: 40%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -161,7 +192,8 @@
       'services .'
       'services process'
       '. process'
-      'partners partners';
+      'partners partners'
+      'motivation motivation';
   }
 
   .services-section {
@@ -172,11 +204,16 @@
     padding-top: var(--spacing-xl);
     margin-top: 0;
   }
+
+  .motivation-section-content {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1280px) {
   .hero-header,
-  .partners-section {
+  .partners-section,
+  .motivation-section {
     padding-left: var(--constrained-horizontal-inset);
     padding-right: var(--constrained-horizontal-inset);
   }

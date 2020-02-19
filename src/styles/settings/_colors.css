@@ -1,9 +1,10 @@
 :root {
   --black: #000;
   --grey: #ededed;
+  --sand: #f9f6f7;
 
   --color-text: var(--black);
-  --color-text-subtle: #757575;
+  --color-text-subtle: #4f4f4f;
   --color-text-inverted: #ffffff;
-  --color-text-subtle-inverted: #8e8e8e;
+  --color-text-subtle-inverted: #a2a2a2;
 }

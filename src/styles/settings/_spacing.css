@@ -4,6 +4,7 @@
   --spacing-base: 3.2rem;
   --spacing-md: 4rem;
   --spacing-lg: 5.6rem;
+  --spacing-xl: 8rem;
 }
 
 @media (min-width: 768px) {

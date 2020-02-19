@@ -2,12 +2,13 @@
   display: grid;
   grid-template-areas:
     'hero'
-    'services';
+    'services'
+    'process'
 }
 
 .container {
   width: 100%;
-  padding: var(--spacing-lg) var(--horizontal-inset);
+  padding: var(--spacing-xl) var(--horizontal-inset);
 }
 
 .subtitle {
@@ -50,8 +51,7 @@
 
 .services-section {
   grid-area: services;
-  color: var(--color-text-inverted);
-  background-color: var(--black);
+  background-color: var(--sand);
 }
 
 .service-list {
@@ -67,29 +67,75 @@
 }
 
 .service-list dd:nth-of-type(even) {
-  color: var(--color-text-subtle-inverted);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-subtle);
   margin-top: var(--spacing-xs);
 }
 
+.process-section {
+  grid-area: process;
+  color: var(--color-text-inverted);
+  background-color: var(--black);
+}
+.process-overview {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-inverted-subtle);
+  list-style-type: none;
+  margin-top: var(--spacing-lg);
+}
+
+.process-overview li {
+  color: var(--color-text-subtle-inverted);
+  margin-bottom: var(--spacing-xs);
+}
+
+.process-overview li::marker {
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--spacing-base);
+}
 @media (min-width: 768px) {
   .home {
-    grid-template-columns: 80vw 1fr;
+    grid-template-columns: repeat(5, 20vw);
     grid-template-areas:
-      'hero hero'
-      'services .';
+      'hero hero hero hero hero'
+      'services services services services .'
+      '. process process process process'
   }
 
   .hero-header {
-    padding-top: 20vh;
+    padding-top: 10vh;
+  }
+
+  .services-section {
+    position: relative;
+    padding-bottom: calc(var(--spacing-lg) + 12rem);
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  .process-section {
+    padding-top: calc(var(--spacing-lg) + 12rem);
+    margin-top: -12rem;
+    border-radius: 2rem 0 0 2rem;
+  }
   }
 }
 
 @media (min-width: 1024px) {
   .home {
-    grid-template-columns: 60vw 1fr;
+    grid-template-rows: auto 15rem auto 15rem auto;
+    grid-template-columns: 50vw 1fr;
     grid-template-areas:
       'hero hero'
-      'services .';
+      'services .'
+      'services process'
+      '. process'
+  .services-section {
+    padding-bottom: 12rem;
+  }
+
+  .process-section {
+    padding-top: var(--spacing-xl);
+    margin-top: 0;
   }
 }
 
@@ -101,5 +147,9 @@
 
   .services-section {
     padding-left: var(--constrained-horizontal-inset);
+  }
+
+  .process-section {
+    padding-right: var(--constrained-horizontal-inset);
   }
 }

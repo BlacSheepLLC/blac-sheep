@@ -44,6 +44,37 @@ const IndexPage = () => (
           <dd>UI / UX design · Prototyping · iOS · Android · Hybrid apps · Backend</dd>
         </dl>
       </section>
+
+      <section className={`${styles.container} ${styles.processSection}`}>
+        <span className={`${styles.subtitle}`}>How we roll</span>
+        <h2 className={`${styles.title}`}>
+          We don&apos;t just type code, deliver and call it a day, we work closely with our partners over the course of
+          our relationship
+        </h2>
+
+        <p>
+          We take a different approach than typical app development shops, we don&apos;t think of ourselves as sales
+          people but rather as business partners. Think of us as your in-house development team that:
+        </p>
+
+        <ul className={styles.processOverview}>
+          <li>
+            — Is 100% remote (&nbsp;
+            <span role="img" aria-label="USA flag">
+              🇺🇸
+            </span>
+            &nbsp;USA · &nbsp;
+            <span role="img" aria-label="Mexico flag">
+              🇲🇽
+            </span>
+            &nbsp;Mexico&nbsp;)
+          </li>
+          <li>— Is passionate about creating amazing products that add value to people&apos;s lifes</li>
+          <li>— Values accessibility, privacy and performance</li>
+          <li>— Works on a feature-based cycle, from idea to production </li>
+          <li>— Shares the startup mindset, understanding the importance of team effort and the challenges ahead</li>
+        </ul>
+      </section>
     </div>
   </Layout>
 );

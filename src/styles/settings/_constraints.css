@@ -3,3 +3,10 @@
   --horizontal-inset: calc(env(safe-area-inset-left) + var(--spacing-sm));
   --constrained-horizontal-inset: calc((100vw - var(--width-constraint)) / 2 + var(--spacing-sm));
 }
+
+@media (min-width: 768px) {
+  :root {
+    --horizontal-inset: calc(env(safe-area-inset-left) + var(--spacing-lg));
+    --constrained-horizontal-inset: calc((100vw - var(--width-constraint)) / 2 + var(--spacing-lg));
+  }
+}

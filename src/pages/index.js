@@ -2,6 +2,9 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import DojourLogoImage from '../components/Image/DojourLogoImage';
+import VitalsLogoImage from '../components/Image/VitalsLogoImage';
+import TSLettersLogoImage from '../components/Image/TSLettersLogoImage';
 
 import styles from './index.module.css';
 
@@ -73,6 +76,23 @@ const IndexPage = () => (
           <li>— Values accessibility, privacy and performance</li>
           <li>— Works on a feature-based cycle, from idea to production </li>
           <li>— Shares the startup mindset, understanding the importance of team effort and the challenges ahead</li>
+        </ul>
+      </section>
+
+      <section className={`${styles.container} ${styles.partnersSection}`}>
+        <span className={styles.subtitle}>Our partners</span>
+        <h2 className={styles.title}>We love working with startups, building the tools of tomorrow</h2>
+
+        <ul className={styles.partnersLogos}>
+          <li>
+            <DojourLogoImage />
+          </li>
+          <li>
+            <TSLettersLogoImage />
+          </li>
+          <li>
+            <VitalsLogoImage />
+          </li>
         </ul>
       </section>
     </div>

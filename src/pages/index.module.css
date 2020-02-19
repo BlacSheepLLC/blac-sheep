@@ -4,6 +4,7 @@
     'hero'
     'services'
     'process'
+    'partners';
 }
 
 .container {
@@ -77,6 +78,22 @@
   color: var(--color-text-inverted);
   background-color: var(--black);
 }
+
+.partners-section {
+  grid-area: partners;
+  text-align: center;
+}
+
+.partners-logos {
+  list-style-type: none;
+  margin-top: var(--spacing-lg);
+}
+
+.partners-logos li {
+  max-width: 300px;
+  margin: var(--spacing-base) auto;
+}
+
 .process-overview {
   font-size: var(--font-size-sm);
   color: var(--color-text-inverted-subtle);
@@ -93,6 +110,7 @@
   font-weight: var(--font-weight-bold);
   margin-right: var(--spacing-base);
 }
+
 @media (min-width: 768px) {
   .home {
     grid-template-columns: repeat(5, 20vw);
@@ -100,6 +118,7 @@
       'hero hero hero hero hero'
       'services services services services .'
       '. process process process process'
+      'partners partners partners partners partners';
   }
 
   .hero-header {
@@ -117,6 +136,19 @@
     margin-top: -12rem;
     border-radius: 2rem 0 0 2rem;
   }
+
+  .partners-section {
+    margin-top: var(--spacing-lg);
+  }
+
+  .partners-logos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .partners-logos li {
+    width: calc(100% / 3);
   }
 }
 
@@ -129,6 +161,9 @@
       'services .'
       'services process'
       '. process'
+      'partners partners';
+  }
+
   .services-section {
     padding-bottom: 12rem;
   }
@@ -140,7 +175,8 @@
 }
 
 @media (min-width: 1280px) {
-  .hero-header {
+  .hero-header,
+  .partners-section {
     padding-left: var(--constrained-horizontal-inset);
     padding-right: var(--constrained-horizontal-inset);
   }

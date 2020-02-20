@@ -56,27 +56,27 @@ const IndexPage = () => (
         </h2>
 
         <p>
-          We take a different approach than typical app development shops, we don&apos;t think of ourselves as sales
-          people but rather as business partners. Think of us as your in-house development team that:
+          Blac—Sheep is a fully remote company working across&nbsp;
+          <span role="img" aria-label="Mexico flag">
+            🇲🇽
+          </span>
+          &nbsp;&nbsp;Mexico and the&nbsp;
+          <span role="img" aria-label="USA flag">
+            🇺🇸
+          </span>
+          &nbsp;US. We love working on challenging and awesome projects, we&apos;re inspired by the startup mindset and
+          energy that comes with building something revolutionary.
         </p>
 
-        <ul className={styles.processOverview}>
-          <li>
-            — Is 100% remote (&nbsp;
-            <span role="img" aria-label="USA flag">
-              🇺🇸
-            </span>
-            &nbsp;USA · &nbsp;
-            <span role="img" aria-label="Mexico flag">
-              🇲🇽
-            </span>
-            &nbsp;Mexico&nbsp;)
-          </li>
-          <li>— Is passionate about creating amazing products that add value to people&apos;s lifes</li>
-          <li>— Values accessibility, privacy and performance</li>
-          <li>— Works on a feature-based cycle, from idea to production </li>
-          <li>— Shares the startup mindset, understanding the importance of team effort and the challenges ahead</li>
-        </ul>
+        <br />
+
+        <p>
+          We don&apos;t think of ourselves as sales people but rather as business partners. No one knows your biz better
+          than you, but we do know how to build killer products that people engage with. We believe that by getting to
+          know each other and collaborating each other&apos;s strengths we can build something incredible.
+        </p>
+
+        <br />
       </section>
 
       <section className={`${styles.container} ${styles.partnersSection}`}>
@@ -107,15 +107,6 @@ const IndexPage = () => (
 
         <div className={styles.motivationSectionContent}>
           <p>
-            We founded
-            <span className="o-brand-wordmark"> Blac—Sheep </span>
-            to work on challenging and awesome projects. Because we love the startup energy of building something new,
-            something revolutionary.
-          </p>
-
-          <br />
-
-          <p>
             Being
             <em> proudly </em>
             Mexican-American founded we saw an opportunity we couldn&apos;t ignore, we had the chance to bring the
@@ -123,7 +114,7 @@ const IndexPage = () => (
             through hard work and collaboration. We wanted
             <strong> diversity and inclusion </strong>
             right at the core of our values. We wanted to open the doors to the talented developers that don&apos;t have
-            the means or the privilege to develop their careers abroad and at their full potential.
+            the means or the priviledge to develop their careers abroad and at their full potential.
           </p>
 
           <br />

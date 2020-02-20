@@ -103,16 +103,6 @@
   margin-top: var(--spacing-lg);
 }
 
-.process-overview li {
-  color: var(--color-text-subtle-inverted);
-  margin-bottom: var(--spacing-xs);
-}
-
-.process-overview li::marker {
-  font-weight: var(--font-weight-bold);
-  margin-right: var(--spacing-base);
-}
-
 .motivation-section {
   grid-area: motivation;
 }
@@ -175,11 +165,13 @@
 
   .motivation-section-content {
     align-self: flex-end;
+    text-align: justify;
     width: 70%;
   }
 
   .motivation-section-header {
     width: 40%;
+    margin-bottom: var(--spacing-sm);
   }
 }
 

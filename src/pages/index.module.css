@@ -94,7 +94,6 @@
 
 .motivation-section {
   grid-area: motivation;
-  margin-bottom: 8rem;
 }
 
 .motivation-section .o-brand-wordmark {
@@ -107,7 +106,41 @@
 
 .contact-section {
   grid-area: footer;
+}
+
+.contact-section-form {
+  padding: var(--spacing-xl) var(--horizontal-inset);
   background-color: var(--sand);
+}
+
+.contact-section-details {
+  padding: var(--spacing-xl) var(--horizontal-inset);
+}
+
+.contact-section-links,
+.contact-section-socials {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin-top: var(--spacing-xl);
+}
+
+.contact-link {
+  display: inline-block;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  letter-spacing: -0.2px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-section-socials {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.social-link {
+  margin-left: var(--spacing-sm);
 }
 
 @media (min-width: 768px) {
@@ -169,6 +202,11 @@
     width: 40%;
     margin-bottom: var(--spacing-sm);
   }
+
+  .contact-section-form {
+    width: 80%;
+    border-radius: 0 2rem 2rem 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -202,24 +240,34 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+  }
+
+  .contact-section-details {
+    width: 50%;
+  }
+
+  .contact-section-form {
+    width: 50%;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-header,
   .partners-section,
-  .motivation-section,
-  .contact-section {
+  .motivation-section {
     padding-left: var(--constrained-horizontal-inset);
     padding-right: var(--constrained-horizontal-inset);
   }
 
-  .services-section {
+  .services-section,
+  .contact-section-form {
     padding-left: var(--constrained-horizontal-inset);
   }
 
-  .process-section {
+  .process-section,
+  .contact-section-details {
     padding-right: var(--constrained-horizontal-inset);
   }
 }

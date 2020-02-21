@@ -4,6 +4,7 @@
   "description": "Blac—Sheep's website",
   "version": "1.0.0",
   "dependencies": {
+    "feather-icons": "^4.26.0",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",

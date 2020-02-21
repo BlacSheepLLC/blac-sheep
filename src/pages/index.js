@@ -6,6 +6,7 @@ import DojourLogoImage from '../components/Image/DojourLogoImage';
 import VitalsLogoImage from '../components/Image/VitalsLogoImage';
 import TSLettersLogoImage from '../components/Image/TSLettersLogoImage';
 import ContactForm from '../components/ContactForm';
+import FeatherIcon from '../components/FeatherIcon';
 
 import styles from './index.module.css';
 
@@ -135,8 +136,44 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section className={`${styles.container} ${styles.contactSection}`} id="contact">
-        <ContactForm />
+      <section className={styles.contactSection} id="contact">
+        <div className={styles.contactSectionForm}>
+          <ContactForm />
+        </div>
+
+        <div className={styles.contactSectionDetails}>
+          <span className="o-brand-subtitle">Get in touch</span>
+          <h2 className="o-brand-title">
+            We&apos;re super chill and casual folks, we&apos;d love to meet over coffee but y&apos;know... remote
+          </h2>
+
+          <div className={styles.contactSectionLinks}>
+            <span>Call us at</span>
+            <a className={`${styles.contactLink} o-interactive-link`} href="tel:6123242096" title="Call Blac—Sheep">
+              (612) 3242 096
+            </a>
+
+            <span>Send us an email to</span>
+            <a
+              className={`${styles.contactLink} o-interactive-link`}
+              href="mailto:hello@blac-sheep.com"
+              title="Write email to Blac—Sheep"
+            >
+              hello@blac-sheep.com
+            </a>
+          </div>
+
+          <div className={styles.contactSectionSocials}>
+            <span>Follow our journey —</span>
+            <a href="https://twitter.com/blac-sheep" className={styles.socialLink}>
+              <FeatherIcon name="twitter" size="30" />
+            </a>
+
+            <a href="https://instagram.com/blacsheep" className={styles.socialLink}>
+              <FeatherIcon name="instagram" size="30" />
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   </Layout>

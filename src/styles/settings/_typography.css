@@ -14,6 +14,7 @@
   --font-size-md: calc(var(--font-size-regular) + 0.2rem);
   --font-size-lg: calc(var(--font-size-md) + 0.4rem);
   --font-size-xl: calc(var(--font-size-lg) + 0.8rem);
+  --font-size-input: 1.6rem;
 }
 
 @media (min-width: 768px) {

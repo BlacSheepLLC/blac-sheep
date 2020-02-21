@@ -5,24 +5,13 @@
     'services'
     'process'
     'partners'
-    'motivation';
+    'motivation'
+    'footer';
 }
 
 .container {
   width: 100%;
   padding: var(--spacing-xl) var(--horizontal-inset);
-}
-
-.subtitle {
-  font-family: var(--font-family-display);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-sm);
-}
-
-.title {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-base);
 }
 
 .hero-header {
@@ -105,6 +94,7 @@
 
 .motivation-section {
   grid-area: motivation;
+  margin-bottom: 8rem;
 }
 
 .motivation-section .o-brand-wordmark {
@@ -115,6 +105,11 @@
   margin-bottom: var(--spacing-lg);
 }
 
+.contact-section {
+  grid-area: footer;
+  background-color: var(--sand);
+}
+
 @media (min-width: 768px) {
   .home {
     grid-template-columns: repeat(5, 20vw);
@@ -123,7 +118,8 @@
       'services services services services .'
       '. process process process process'
       'partners partners partners partners partners'
-      'motivation motivation motivation motivation motivation';
+      'motivation motivation motivation motivation motivation'
+      'footer footer footer footer footer';
   }
 
   .hero-header {
@@ -185,7 +181,8 @@
       'services process'
       '. process'
       'partners partners'
-      'motivation motivation';
+      'motivation motivation'
+      'footer footer';
   }
 
   .services-section {
@@ -200,12 +197,20 @@
   .motivation-section-content {
     width: 60%;
   }
+
+  .contact-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 
 @media (min-width: 1280px) {
   .hero-header,
   .partners-section,
-  .motivation-section {
+  .motivation-section,
+  .contact-section {
     padding-left: var(--constrained-horizontal-inset);
     padding-right: var(--constrained-horizontal-inset);
   }

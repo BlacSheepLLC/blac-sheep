@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import DojourLogoImage from '../components/Image/DojourLogoImage';
 import VitalsLogoImage from '../components/Image/VitalsLogoImage';
 import TSLettersLogoImage from '../components/Image/TSLettersLogoImage';
+import ContactForm from '../components/ContactForm';
 
 import styles from './index.module.css';
 
@@ -26,8 +27,8 @@ const IndexPage = () => (
       </header>
 
       <section className={`${styles.container} ${styles.servicesSection}`}>
-        <span className={`${styles.subtitle}`}>Our services</span>
-        <h2 className={`${styles.title}`}>
+        <span className="o-brand-subtitle">Our services</span>
+        <h2 className="o-brand-title">
           We play the long run by delivering high-quality, user-fiendly products that people love to use
         </h2>
 
@@ -49,8 +50,8 @@ const IndexPage = () => (
       </section>
 
       <section className={`${styles.container} ${styles.processSection}`}>
-        <span className={`${styles.subtitle}`}>How we roll</span>
-        <h2 className={`${styles.title}`}>
+        <span className="o-brand-subtitle">How we roll</span>
+        <h2 className="o-brand-title">
           We don&apos;t just type code, deliver and call it a day, we work closely with our partners over the course of
           our relationship
         </h2>
@@ -80,8 +81,8 @@ const IndexPage = () => (
       </section>
 
       <section className={`${styles.container} ${styles.partnersSection}`}>
-        <span className={styles.subtitle}>Our partners</span>
-        <h2 className={styles.title}>We love working with startups, building the tools of tomorrow</h2>
+        <span className="o-brand-subtitle">Our partners</span>
+        <h2 className="o-brand-title">We love working with startups, building the tools of tomorrow</h2>
 
         <ul className={styles.partnersLogos}>
           <li>
@@ -98,8 +99,8 @@ const IndexPage = () => (
 
       <section className={`${styles.container} ${styles.motivationSection}`}>
         <div className={styles.motivationSectionHeader}>
-          <span className={styles.subtitle}>It&apos;s a win-win</span>
-          <h2 className={styles.title}>
+          <span className="o-brand-subtitle">It&apos;s a win-win</span>
+          <h2 className="o-brand-title">
             Working on pijamas, from a coffeeshop and our pets all over our keyboards it&apos;s a lifestyle, but remote
             means so much more for us
           </h2>
@@ -111,7 +112,13 @@ const IndexPage = () => (
             <em> proudly </em>
             Mexican-American founded we saw an opportunity we couldn&apos;t ignore, we had the chance to bring the
             <b> best of our countries together </b>
-            through hard work and collaboration. We wanted
+            through hard work and collaboration.
+          </p>
+
+          <br />
+
+          <p>
+            We wanted
             <strong> diversity and inclusion </strong>
             right at the core of our values. We wanted to open the doors to the talented developers that don&apos;t have
             the means or the priviledge to develop their careers abroad and at their full potential.
@@ -126,6 +133,10 @@ const IndexPage = () => (
             cutting-edge startups. We are all eager to show what we can do together.
           </p>
         </div>
+      </section>
+
+      <section className={`${styles.container} ${styles.contactSection}`} id="contact">
+        <ContactForm />
       </section>
     </div>
   </Layout>

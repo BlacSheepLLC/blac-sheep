@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.o-interactive-cta {
-  transform: rotate(45deg);
-}
-
 .o-interactive-link::before,
 .o-interactive-cta::before {
   content: '';

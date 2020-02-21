@@ -16,6 +16,18 @@
   align-items: center;
 }
 
+.o-brand-subtitle {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+}
+
+.o-brand-title {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-base);
+}
+
 @media (max-width: 320px) {
   .o-brand-emblem {
     display: none;

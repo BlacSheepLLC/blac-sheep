@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  max-width: 60rem;
+  padding: var(--spacing-base);
+  border-radius: 1.6rem;
+  background-color: #ffffff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
+}
+
+.legend {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.instructions {
+  font-size: var(--font-size-sm);
+  text-align: center;
+  margin-bottom: var(--spacing-base);
+}
+
+.field {
+  position: relative;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.field span {
+  position: absolute;
+  top: var(--spacing-xs);
+  left: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-subtle);
+  letter-spacing: 0.4px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  display: block;
+  width: 100%;
+  font-size: var(--font-size-input);
+  padding: 2.4rem var(--spacing-sm) var(--spacing-xs);
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--blue);
+}
+
+.field select {
+  appearance: none;
+}
+
+.field textarea {
+  height: 12rem;
+  resize: none;
+}
+
+.submit {
+  display: block;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  padding: 0;
+  margin: var(--spacing-base) auto 0;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .field input,
+  .field select,
+  .field textarea {
+    padding-top: var(--spacing-sm);
+  }
+}

@@ -6,7 +6,7 @@
     'process'
     'partners'
     'motivation'
-    'footer';
+    'contact';
 }
 
 .container {
@@ -105,12 +105,16 @@
 }
 
 .contact-section {
-  grid-area: footer;
+  grid-area: contact;
 }
 
 .contact-section-form {
   padding: var(--spacing-xl) var(--horizontal-inset);
   background-color: var(--sand);
+}
+
+.contact-section-form form {
+  margin: 0 auto;
 }
 
 .contact-section-details {
@@ -152,7 +156,7 @@
       '. process process process process'
       'partners partners partners partners partners'
       'motivation motivation motivation motivation motivation'
-      'footer footer footer footer footer';
+      'contact contact contact contact contact';
   }
 
   .hero-header {
@@ -203,6 +207,10 @@
     margin-bottom: var(--spacing-sm);
   }
 
+  .contact-section {
+    margin-bottom: var(--spacing-xl);
+  }
+
   .contact-section-form {
     width: 80%;
     border-radius: 0 2rem 2rem 0;
@@ -220,7 +228,7 @@
       '. process'
       'partners partners'
       'motivation motivation'
-      'footer footer';
+      'contact contact';
   }
 
   .services-section {

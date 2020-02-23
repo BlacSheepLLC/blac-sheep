@@ -44,7 +44,7 @@ const ContactForm = () => (
       />
     </label>
 
-    <button type="button" className={`${styles.submit} o-interactive-cta`}>
+    <button type="submit" className={`${styles.submit} o-interactive-cta`}>
       Send Message
     </button>
   </form>

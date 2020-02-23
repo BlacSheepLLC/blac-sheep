@@ -165,12 +165,16 @@ const IndexPage = () => (
 
           <div className={styles.contactSectionSocials}>
             <span>Follow our journey —</span>
-            <a href="https://twitter.com/blac-sheep" className={styles.socialLink}>
-              <FeatherIcon name="twitter" size="30" />
+            <a href="https://twitter.com/blac-sheep" className={styles.socialLink} title="Visit Blac—Sheep's Twitter">
+              <FeatherIcon name="twitter" size={30} />
             </a>
 
-            <a href="https://instagram.com/blacsheep" className={styles.socialLink}>
-              <FeatherIcon name="instagram" size="30" />
+            <a
+              href="https://instagram.com/blacsheep"
+              className={styles.socialLink}
+              title="Visit Blac—Sheep's Instagram"
+            >
+              <FeatherIcon name="instagram" size={30} />
             </a>
           </div>
         </div>

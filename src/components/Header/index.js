@@ -19,18 +19,7 @@ const Header = () => (
       </span>
     </Link>
 
-    <ul className={`${styles.links}`}>
-      <li>
-        <Link to="/about" className="o-interactive-link">
-          About us
-        </Link>
-      </li>
-      <li>
-        <Link to="/blog" className="o-interactive-link">
-          Our blog
-        </Link>
-      </li>
-    </ul>
+    <ul className={`${styles.links}`} />
   </nav>
 );
 

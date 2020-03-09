@@ -1,5 +1,5 @@
 .o-brand-emblem {
-  width: 5rem;
+  width: 16rem;
   margin-right: 1.6rem;
 }
 
@@ -26,10 +26,4 @@
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-base);
-}
-
-@media (max-width: 320px) {
-  .o-brand-emblem {
-    display: none;
-  }
 }

@@ -11,12 +11,6 @@ const Header = () => (
       <div className="o-brand-emblem">
         <EmblemLogoImage />
       </div>
-
-      <span className="o-brand-wordmark">
-        Blac-
-        <br />
-        Sheep
-      </span>
     </Link>
 
     <ul className={`${styles.links}`} />

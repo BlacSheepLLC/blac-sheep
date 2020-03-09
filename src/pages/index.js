@@ -16,7 +16,7 @@ const IndexPage = () => (
 
     <div className={styles.home}>
       <header className={`${styles.container} ${styles.heroHeader}`}>
-        <h1 className={`${styles.heroTitle}`}>We&apos;re a web and mobile app development studio</h1>
+        <h1 className={`${styles.heroTitle}`}>We are a web and mobile app development studio</h1>
         <p className={`${styles.heroLead}`}>
           We partner with startups as a remote in-house product development team — providing the management, design and
           development workforce to meet your goals
@@ -58,7 +58,7 @@ const IndexPage = () => (
         </h2>
 
         <p>
-          Blac—Sheep is a fully remote company working across&nbsp;
+          Blac-Sheep is a fully remote company working across&nbsp;
           <span role="img" aria-label="Mexico flag">
             🇲🇽
           </span>
@@ -149,7 +149,7 @@ const IndexPage = () => (
 
           <div className={styles.contactSectionLinks}>
             <span>Call us at</span>
-            <a className={`${styles.contactLink} o-interactive-link`} href="tel:6123242096" title="Call Blac—Sheep">
+            <a className={`${styles.contactLink} o-interactive-link`} href="tel:6123242096" title="Call Blac-Sheep">
               (612) 3242 096
             </a>
 
@@ -157,7 +157,7 @@ const IndexPage = () => (
             <a
               className={`${styles.contactLink} o-interactive-link`}
               href="mailto:hello@blac-sheep.com"
-              title="Write email to Blac—Sheep"
+              title="Write email to Blac-Sheep"
             >
               hello@blac-sheep.com
             </a>
@@ -165,14 +165,14 @@ const IndexPage = () => (
 
           <div className={styles.contactSectionSocials}>
             <span>Follow our journey —</span>
-            <a href="https://twitter.com/blac-sheep" className={styles.socialLink} title="Visit Blac—Sheep's Twitter">
+            <a href="https://twitter.com/blac-sheep" className={styles.socialLink} title="Visit Blac-Sheep's Twitter">
               <FeatherIcon name="twitter" size={30} />
             </a>
 
             <a
               href="https://instagram.com/blacsheep"
               className={styles.socialLink}
-              title="Visit Blac—Sheep's Instagram"
+              title="Visit Blac-Sheep's Instagram"
             >
               <FeatherIcon name="instagram" size={30} />
             </a>

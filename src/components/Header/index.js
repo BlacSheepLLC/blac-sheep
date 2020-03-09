@@ -13,7 +13,7 @@ const Header = () => (
       </div>
 
       <span className="o-brand-wordmark">
-        Blac—
+        Blac-
         <br />
         Sheep
       </span>

@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: var(--spacing-md) var(--horizontal-inset);

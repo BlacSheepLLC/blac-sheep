@@ -4,6 +4,7 @@ import styles from './index.module.css';
 
 const ContactForm = () => (
   <form name="contact" method="POST" data-netlify="true" className={styles.container}>
+    <input type="hidden" name="form-name" value="contact" />
     <fieldset>
       <legend className={`${styles.legend} o-brand-subtitle`}>Let&apos;s talk</legend>
       <p className={styles.instructions}>Drop us a line, tell us a bit about who you are and what you do</p>

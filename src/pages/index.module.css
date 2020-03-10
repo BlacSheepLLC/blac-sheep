@@ -16,8 +16,8 @@
 
 .hero-header {
   grid-area: hero;
-  padding-top: 30vh;
-  padding-bottom: 12rem;
+  padding-top: 8vh;
+  padding-bottom: 8rem;
 }
 
 .hero-header .hero-title {

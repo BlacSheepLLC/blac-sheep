@@ -150,7 +150,7 @@ const IndexPage = () => (
           <div className={styles.contactSectionLinks}>
             <span>Call us at</span>
             <a className={`${styles.contactLink} o-interactive-link`} href="tel:6123242096" title="Call Blac-Sheep">
-              (612) 3242 096
+              (612) 324-2096
             </a>
 
             <span>Send us an email to</span>

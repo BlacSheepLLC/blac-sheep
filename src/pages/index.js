@@ -16,7 +16,10 @@ const IndexPage = () => (
 
     <div className={styles.home}>
       <header className={`${styles.container} ${styles.heroHeader}`}>
-        <h1 className={`${styles.heroTitle}`}>We are a web and mobile app development studio</h1>
+        <h1 className={`${styles.heroTitle}`}>We are a Product Development Studio for Startups</h1>
+        <p className={`${styles.heroLead}`}>
+          We do web development, mobile app development and full technology and architecture solutions.
+        </p>
         <p className={`${styles.heroLead}`}>
           We partner with startups as a remote in-house product development team — providing the management, design and
           development workforce to meet your goals
@@ -58,7 +61,7 @@ const IndexPage = () => (
         </h2>
 
         <p>
-          Blac-Sheep is a fully remote company working across&nbsp;
+          Blac-Sheep&apos;s HQ is based in Minneapolis, MN but we work remotely across&nbsp;
           <span role="img" aria-label="Mexico flag">
             🇲🇽
           </span>
@@ -160,6 +163,15 @@ const IndexPage = () => (
               title="Write email to Blac-Sheep"
             >
               hello@blac-sheep.com
+            </a>
+
+            <span>Come say hi to HQ!</span>
+            <a
+              className={`${styles.contactLink} o-interactive-link`}
+              href="https://goo.gl/maps/9x8wzm5jctXMVAdC8"
+              title="Locate Blac-Sheep on Google Maps"
+            >
+              400 S 4th St #401, Minneapolis, MN 55415
             </a>
           </div>
 

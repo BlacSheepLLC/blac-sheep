@@ -62,10 +62,14 @@ const IndexPage = () => (
 
         <p>
           Blac-Sheep&apos;s HQ is based in Minneapolis, MN but we work remotely across&nbsp;
-          <span role="img" aria-label="Mexico flag">
+          <span role="img" aria-label="Mexico's flag">
             🇲🇽
           </span>
-          &nbsp;&nbsp;Mexico and the&nbsp;
+          &nbsp;&nbsp;Mexico,
+          <span role="img" aria-label="Canada's flag">
+            🇨🇦
+          </span>
+          &nbsp;&nbsp;Canada and the&nbsp;
           <span role="img" aria-label="USA flag">
             🇺🇸
           </span>
